@@ -22,3 +22,6 @@ Make sure to have all the dependencies above installed locally.
 - run ``php artisan db:seed``
 - open browser http://<<your-localhost-name>>/graphiql 
 ```
+
+## Screen Shot
+!![alt text](https://github.com/Zalfrie/[reponame]/blob/backend-antikode-test/Screenshot 2022-01-21 at 16-02-08 GraphiQL.png?raw=true)
