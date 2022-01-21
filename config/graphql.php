@@ -74,14 +74,29 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // ExampleQuery::class,
+                'brand' => \App\GraphQL\Queries\Brand\BrandQuery::class,
+                'brands' => \App\GraphQL\Queries\Brand\BrandsQuery::class,
+                'outlet' => \App\GraphQL\Queries\Outlet\OutletQuery::class,
+                'outlets' => \App\GraphQL\Queries\Outlet\OutletsQuery::class,
+                'product' => \App\GraphQL\Queries\Product\ProductQuery::class,
+                'products' => \App\GraphQL\Queries\Product\ProductsQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'createBrand' => \App\GraphQL\Mutations\Brand\CreateBrandMutation::class,
+                'deleteBrand' => \App\GraphQL\Mutations\Brand\DeleteBrandMutation::class,
+                'updateBrand' => \App\GraphQL\Mutations\Brand\UpdateBrandMutation::class,
+                'createOutlet' => \App\GraphQL\Mutations\Outlet\CreateOutletMutation::class,
+                'deleteOutlet' => \App\GraphQL\Mutations\Outlet\DeleteOutletMutation::class,
+                'updateOutlet' => \App\GraphQL\Mutations\Outlet\UpdateOutletMutation::class,
+                'createProduct' => \App\GraphQL\Mutations\Product\CreateProductMutation::class,
+                'deleteProduct' => \App\GraphQL\Mutations\Product\DeleteProductMutation::class,
+                'updateProduct' => \App\GraphQL\Mutations\Product\UpdateProductMutation::class,
             ],
             // The types only available in this schema
             'types' => [
-                // ExampleType::class,
+                'Brand' => \App\GraphQL\Types\BrandType::class,
+                'Outlet' => \App\GraphQL\Types\OutletType::class,
+                'Product' => \App\GraphQL\Types\ProductType::class,
             ],
 
             // Laravel HTTP middleware
