@@ -19,6 +19,6 @@ class Outlet extends Model
 
     public function brand()
     {
-        $this->belongsTo(Brand::class);
+        return $this->belongsTo(Brand::class);
     }
 }
