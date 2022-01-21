@@ -15,7 +15,7 @@ class BrandsQuery extends Query
 
     public function type(): Type
     {
-        return Type::listOf(GraphQL::type('Brands'));
+        return Type::listOf(GraphQL::type('Brand'));
     }
 
     public function resolve($root, $args)

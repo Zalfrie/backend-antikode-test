@@ -15,7 +15,7 @@ class ProductsQuery extends Query
 
     public function type(): Type
     {
-        return Type::listOf(GraphQL::type('Products'));
+        return Type::listOf(GraphQL::type('Product'));
     }
 
     public function resolve($root, $args)

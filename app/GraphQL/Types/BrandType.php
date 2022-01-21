@@ -26,6 +26,10 @@ class BrandType extends GraphQLType
                 'type' => Type::nonNull(Type::string()),
                 'description' => 'Name of the brand'
             ],
+            'logo' => [
+                'type' => Type::nonNull(Type::string()),
+                'description' => 'Logo of the brand'
+            ],
             'banner' => [
                 'type' => Type::nonNull(Type::string()),
                 'description' => 'Banner of the brand'
